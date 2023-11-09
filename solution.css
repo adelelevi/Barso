@@ -1,0 +1,31 @@
+/* Group */
+h1,
+h2 {
+  color: blueviolet;
+}
+
+/* Child il primo selector è il genitore e il secondo è il figlio
+ovvero se abbiamo un div dentro un div. 
+il primo ovviamente è il genitore.
+in partica dice di usare firebrick solamente
+nel p che sta dentro il .box*/
+.box > p {
+  color: firebrick;
+}
+
+/* Descendent c'è l'ancestor e il descendant
+è la stessa cosa di sopra circa ma piò essere piu gradi di parentela
+*/
+.box li {
+  color: blue;
+}
+
+/* Chained molto specifico, metto sia li che done */
+li.done {
+  color: green;
+}
+
+/* Multiple Combiners */
+ul p.done {
+  font-size: 0.5rem;
+}
